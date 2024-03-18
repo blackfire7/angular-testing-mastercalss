@@ -22,7 +22,7 @@ describe('CalculatorService', () => {
     calculator = TestBed.inject(CalculatorService);
   });
 
-  it('Should add two numbers', () => {
+  it('should add two numbers', () => {
 
     console.log('add test');
 
@@ -33,7 +33,7 @@ describe('CalculatorService', () => {
 
   })
 
-  it('Should subtract two numbers', () => {
+  it('should subtract two numbers', () => {
 
     console.log('subtract test');
 
