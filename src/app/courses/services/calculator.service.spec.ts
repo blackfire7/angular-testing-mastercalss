@@ -8,7 +8,7 @@ describe('CalculatorService', () => {
 
   beforeEach(() => {
 
-    console.log('Calling before each');
+    // console.log('Calling before each');
 
     loggerSpy = jasmine.createSpyObj('LoggerService', ['log']);
 
@@ -24,7 +24,7 @@ describe('CalculatorService', () => {
 
   it('should add two numbers', () => {
 
-    console.log('add test');
+    // console.log('add test');
 
     const result = calculator.add(2, 3);
 
@@ -35,7 +35,7 @@ describe('CalculatorService', () => {
 
   it('should subtract two numbers', () => {
 
-    console.log('subtract test');
+    // console.log('subtract test');
 
     const result = calculator.subtract(20, 15);
 
