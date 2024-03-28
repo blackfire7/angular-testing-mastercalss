@@ -8,7 +8,7 @@ import {setupCourses} from '../common/setup-test-data';
 import {By} from '@angular/platform-browser';
 import {of} from 'rxjs';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
-import {click} from "../common/test-utils";
+import {click} from '../common/test-utils';
 
 
 describe('HomeComponent', () => {
@@ -43,14 +43,14 @@ describe('HomeComponent', () => {
 
   }));
 
-  it("should create the component", () => {
+  it('should create the component', () => {
 
     expect(component).toBeTruthy();
 
   });
 
 
-  it("should display only beginner courses", () => {
+  it('should display only beginner courses', () => {
     coursesService.findAllCourses.and.returnValue(of(beginnerCourses));
 
     fixture.detectChanges();
@@ -63,7 +63,7 @@ describe('HomeComponent', () => {
   });
 
 
-  it("should display only advanced courses", () => {
+  it('should display only advanced courses', () => {
     coursesService.findAllCourses.and.returnValue(of(advancedCourses));
 
     fixture.detectChanges();
@@ -75,7 +75,7 @@ describe('HomeComponent', () => {
   });
 
 
-  it("should display both tabs", () => {
+  it('should display both tabs', () => {
     coursesService.findAllCourses.and.returnValue(of(setupCourses()));
 
     fixture.detectChanges();
@@ -86,7 +86,7 @@ describe('HomeComponent', () => {
   });
 
 
-  it("should display advanced courses when tab clicked - fakeAsync", fakeAsync(() => {
+  it('should display advanced courses when tab clicked - fakeAsync', fakeAsync(() => {
 
     coursesService.findAllCourses.and.returnValue(of(setupCourses()));
     fixture.detectChanges();
@@ -107,13 +107,13 @@ describe('HomeComponent', () => {
 
   }));
 
-  it("should display advanced courses when tab clicked - async", waitForAsync(() => {
+  it('should display advanced courses when tab clicked - async', waitForAsync(() => {
 
     coursesService.findAllCourses.and.returnValue(of(setupCourses()));
 
     fixture.detectChanges();
 
-    const tabs = el.queryAll(By.css(".mdc-tab"));
+    const tabs = el.queryAll(By.css('.mdc-tab'));
 
     click(tabs[1]);
 
