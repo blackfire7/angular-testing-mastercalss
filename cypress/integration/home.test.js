@@ -32,4 +32,7 @@ describe('Home Page', () => {
     cy.get('.mat-mdc-tab-body-active .mat-mdc-card-title').first().should('contain', 'Angular Security Course - Web Security Fundamentals');
   });
 
+  // for generating coverage report : ng test --watch=false --code-coverage
+  // for viewing the coverage report : http-server -c-1 .
+
 });
